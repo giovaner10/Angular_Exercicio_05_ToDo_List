@@ -1,0 +1,29 @@
+<mat-card class="example-card">
+
+  <mat-card-title>Todo App</mat-card-title>
+
+  <form class="example-form">
+    
+    
+    <section class="add">
+      <input #input id="input" placeholder="Add your new todo" [(ngModel)]="item">
+      <button btn-add (click)="adicionarTarefa(input.value)">+</button>
+
+    </section>
+
+    <section role="list" class="list" *ngFor="let item of tarefas">
+
+      <p class="list-item" role="listitem">{{item}} </p>
+      
+      <button btn-del (click)="removerTarefa(item)" color="primary">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </section>
+    <mat-card-footer class="footer">
+      <p>you have {{pendentes}} pending tasks</p>
+      <button (click)="clearAll()" btn-clear>Clear All</button>
+    </mat-card-footer>
+  </form>
+
+
+</mat-card>

@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(0deg, #4A7FE7, #68E6CE);
+;}
+
+
+.btn-del{
+    background-color: #E74E3B;
+    color: white;
+    border: none;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 3px 3px 0px;
+
+}
+
+.btn-add{
+background-color: #8E4AE7;
+height: 35px;  
+width: 35px;
+border: none;  
+color: white;
+font-weight: 700;
+font-size: 25px;
+border-radius: 3px;
+margin-left: 4px;
+}
+
+.btn-clear{
+    background-color: #8E4AE7;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+    height: 30px;
+    width: 70px;
+
+}
