@@ -14,13 +14,8 @@ export class TodoComponent {
 
   item: string = ''
 
-  pendentes: number = 0
-
-
   adicionarTarefa(input: string) {
     this.tarefas.push(input)
-
-    this.pendentes = this.tarefas.length
 
     this.setBanco(this.tarefas)
 
@@ -30,8 +25,6 @@ export class TodoComponent {
   removerTarefa(remove: string) {
     this.tarefas.splice(this.tarefas.indexOf(remove), 1)
 
-    this.pendentes = this.tarefas.length
-
     this.setBanco(this.tarefas)
 
     this.matSnackBarService.removido()
@@ -39,8 +32,6 @@ export class TodoComponent {
 
   clearAll() {
     this.tarefas.splice(0, this.tarefas.length)
-
-    this.pendentes = this.tarefas.length
 
     this.setBanco(this.tarefas)
 
@@ -60,8 +51,4 @@ export class TodoComponent {
     localStorage.setItem('todoList', JSON.stringify(banco))
   }
 
-  @HostListener('onload')
-  loadData(): void{
-    this.adicionarTarefa = this.getBanco()
-  }
 }
