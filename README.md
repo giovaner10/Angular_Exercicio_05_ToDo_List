@@ -4,8 +4,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## :framed_picture: Fotos do projeto
 
  ![foto](https://github.com/giovaner10/templete_angular/blob/main/proj%205/Captura%20de%20tela%202022-03-15%20180111.png)
- ![foto1](https://github.com/giovaner10/templete_angular/blob/main/proj%205/Captura%20de%20tela%202022-03-15%20180111.png)   
-
 
 ## Development server
 
